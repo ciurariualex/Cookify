@@ -142,3 +142,20 @@ F:\Personal Pojects\MM_App\WebAppManagement\Web\obj\Debug\netcoreapp2.0\Web.Asse
 F:\Personal Pojects\MM_App\WebAppManagement\Web\obj\Debug\netcoreapp2.0\Web.csproj.CopyComplete
 F:\Personal Pojects\MM_App\WebAppManagement\Web\obj\Debug\netcoreapp2.0\Web.dll
 F:\Personal Pojects\MM_App\WebAppManagement\Web\obj\Debug\netcoreapp2.0\Web.pdb
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Web\bin\Debug\netcoreapp2.0\Core.dll
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Web\bin\Debug\netcoreapp2.0\Resources.dll
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Web\obj\Debug\netcoreapp2.0\Web.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Web\obj\Debug\netcoreapp2.0\Web.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Web\obj\Debug\netcoreapp2.0\Web.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Web\obj\Debug\netcoreapp2.0\Web.AssemblyInfo.cs
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Web\bin\Debug\netcoreapp2.0\Web.deps.json
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Web\bin\Debug\netcoreapp2.0\Web.runtimeconfig.json
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Web\bin\Debug\netcoreapp2.0\Web.runtimeconfig.dev.json
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Web\bin\Debug\netcoreapp2.0\Web.dll
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Web\bin\Debug\netcoreapp2.0\Web.pdb
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Web\bin\Debug\netcoreapp2.0\Core.pdb
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Web\bin\Debug\netcoreapp2.0\Resources.pdb
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Web\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Web\obj\Debug\netcoreapp2.0\Web.csproj.CopyComplete
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Web\obj\Debug\netcoreapp2.0\Web.dll
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Web\obj\Debug\netcoreapp2.0\Web.pdb

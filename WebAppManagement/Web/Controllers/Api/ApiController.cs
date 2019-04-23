@@ -2,6 +2,8 @@
 using Core.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -16,61 +18,48 @@ namespace Web.Controllers.Api
             _appUserModel = appUserRepository;
         }
 
-        public async Task<JsonResult> Register(string userName, string token, string email, string address, string phoneNumber)
+        [HttpGet("register")]
+        public async Task<IActionResult> Register([FromBody]AppUser model)
         {
             var appUsers = await _appUserModel.GetAllActive();
 
-            var user = appUsers.FirstOrDefault(appUser => appUser.Equals(userName) && appUser.Token.Equals(token));
+            var user = appUsers.FirstOrDefault(appUser => appUser.Equals(model.AuthToken));
 
             if (user == null)
             {
                 var appUser = new AppUser()
                 {
-                    UserName = userName,
-                    Token = token,
-                    Email = email,
-                    Address = address,
-                    PhoneNumber = phoneNumber
+                    UserType = (UserType)Enum.Parse(typeof(UserType), model.UserTypeString),
+                    AuthToken = model.AuthToken,
+                    Email = model.Email,
+                    LastName = model.LastName,
+                    FirstName = model.FirstName,
+                    RestaurantName = model.RestaurantName,
+                    Latitude = model.Latitude,
+                    Longitude = model.Longitude,
+                    PhoneNumber = model.PhoneNumber
                 };
 
                 await _appUserModel.Create(appUser);
 
-                return Json(StatusCodes.Status200OK);
+                return this.Accepted(new { appUser.AuthToken, Message = "Successfully Created" });
             }
 
-            return Json(StatusCodes.Status400BadRequest);
+            return this.BadRequest("User exist");
         }
 
-        public async Task<JsonResult> Login(string userName, string token)
+        public async Task<IActionResult> Login(string AuthToken)
         {
-            bool result = false;
-
             var appUsers = await _appUserModel.GetAllActive();
 
-            var currentUser = appUsers.FirstOrDefault(appUser => appUser.Equals(userName) && appUser.Token.Equals(token));
+            var currentUser = appUsers.FirstOrDefault(appUser => appUser.AuthToken.Equals(AuthToken));
 
             if (currentUser != null)
             {
-                result = true;
+                return this.Accepted(currentUser);
             }
 
-            return Json(result);
-        }
-
-        public async Task<JsonResult> ExistUser(string userName, string token)
-        {
-            bool result = false;
-
-            var appUsers = await _appUserModel.GetAllActive();
-
-            var currentUser = appUsers.FirstOrDefault(appUser => appUser.Equals(userName));
-
-            if (currentUser != null)
-            {
-                result = true;
-            }
-
-            return Json(result);
+            return this.BadRequest();
         }
     }
 }

@@ -24,7 +24,7 @@ namespace Core.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Address")
+                    b.Property<string>("AuthToken")
                         .IsRequired()
                         .HasMaxLength(4001);
 
@@ -32,23 +32,30 @@ namespace Core.Migrations
 
                     b.Property<DateTime>("Edited");
 
-                    b.Property<string>("Email")
-                        .IsRequired()
+                    b.Property<string>("Email");
+
+                    b.Property<string>("FirstName")
                         .HasMaxLength(50);
 
                     b.Property<bool>("IsDeleted")
                         .ValueGeneratedOnAdd()
                         .HasDefaultValue(false);
 
+                    b.Property<string>("LastName")
+                        .HasMaxLength(50);
+
+                    b.Property<double>("Latitude");
+
+                    b.Property<double>("Longitude");
+
                     b.Property<string>("PhoneNumber");
 
-                    b.Property<string>("Token")
-                        .IsRequired()
-                        .HasMaxLength(4001);
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
+                    b.Property<string>("RestaurantName")
                         .HasMaxLength(50);
+
+                    b.Property<int>("UserType");
+
+                    b.Property<string>("UserTypeString");
 
                     b.HasKey("Id")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);

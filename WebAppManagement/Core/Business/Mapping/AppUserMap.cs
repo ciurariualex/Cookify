@@ -16,19 +16,16 @@ namespace Core.Business.Mapping
             builder.HasKey(appUser => appUser.Id)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            builder.Property(appUser => appUser.UserName)
-               .HasMaxLength(50)
-               .IsRequired();
+            builder.Property(appUser => appUser.LastName)
+               .HasMaxLength(50);
 
-            builder.Property(appUser => appUser.Token)
-                .HasMaxLength(4001)
-                .IsRequired();
+            builder.Property(appUser => appUser.FirstName)
+                .HasMaxLength(50);
 
-            builder.Property(appUser => appUser.Email)
-                .HasMaxLength(50)
-                .IsRequired();
+            builder.Property(appUser => appUser.RestaurantName)
+                .HasMaxLength(50);
 
-            builder.Property(appUser => appUser.Address)
+            builder.Property(appUser => appUser.AuthToken)
                 .HasMaxLength(4001)
                 .IsRequired();
 

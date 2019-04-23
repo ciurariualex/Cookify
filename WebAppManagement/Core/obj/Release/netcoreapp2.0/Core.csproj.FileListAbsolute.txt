@@ -31,3 +31,14 @@ F:\Personal Pojects\MM_App\WebAppManagement\Core\bin\Release\netcoreapp2.0\Core.
 F:\Personal Pojects\MM_App\WebAppManagement\Core\bin\Release\netcoreapp2.0\Core.runtimeconfig.dev.json
 F:\Personal Pojects\MM_App\WebAppManagement\Core\bin\Release\netcoreapp2.0\Core.dll
 F:\Personal Pojects\MM_App\WebAppManagement\Core\bin\Release\netcoreapp2.0\Core.pdb
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Core\bin\Release\netcoreapp2.0\Core.deps.json
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Core\bin\Release\netcoreapp2.0\Core.runtimeconfig.json
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Core\bin\Release\netcoreapp2.0\Core.runtimeconfig.dev.json
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Core\bin\Release\netcoreapp2.0\Core.dll
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Core\bin\Release\netcoreapp2.0\Core.pdb
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Core\obj\Release\netcoreapp2.0\Core.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Core\obj\Release\netcoreapp2.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Core\obj\Release\netcoreapp2.0\Core.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Core\obj\Release\netcoreapp2.0\Core.AssemblyInfo.cs
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Core\obj\Release\netcoreapp2.0\Core.dll
+C:\Users\Admin\Documents\Cookify\WebAppManagement\Core\obj\Release\netcoreapp2.0\Core.pdb

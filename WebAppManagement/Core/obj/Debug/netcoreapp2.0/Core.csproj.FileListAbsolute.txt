@@ -111,3 +111,14 @@ C:\Users\Admin\Documents\Cookify\WebAppManagement\Core\obj\Debug\netcoreapp2.0\C
 C:\Users\Admin\Documents\Cookify\WebAppManagement\Core\obj\Debug\netcoreapp2.0\Core.AssemblyInfo.cs
 C:\Users\Admin\Documents\Cookify\WebAppManagement\Core\obj\Debug\netcoreapp2.0\Core.dll
 C:\Users\Admin\Documents\Cookify\WebAppManagement\Core\obj\Debug\netcoreapp2.0\Core.pdb
+C:\Users\Alex\Documents\Cookify\WebAppManagement\Core\bin\Debug\netcoreapp2.0\Core.deps.json
+C:\Users\Alex\Documents\Cookify\WebAppManagement\Core\bin\Debug\netcoreapp2.0\Core.runtimeconfig.json
+C:\Users\Alex\Documents\Cookify\WebAppManagement\Core\bin\Debug\netcoreapp2.0\Core.runtimeconfig.dev.json
+C:\Users\Alex\Documents\Cookify\WebAppManagement\Core\bin\Debug\netcoreapp2.0\Core.dll
+C:\Users\Alex\Documents\Cookify\WebAppManagement\Core\bin\Debug\netcoreapp2.0\Core.pdb
+C:\Users\Alex\Documents\Cookify\WebAppManagement\Core\obj\Debug\netcoreapp2.0\Core.csprojAssemblyReference.cache
+C:\Users\Alex\Documents\Cookify\WebAppManagement\Core\obj\Debug\netcoreapp2.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Documents\Cookify\WebAppManagement\Core\obj\Debug\netcoreapp2.0\Core.AssemblyInfoInputs.cache
+C:\Users\Alex\Documents\Cookify\WebAppManagement\Core\obj\Debug\netcoreapp2.0\Core.AssemblyInfo.cs
+C:\Users\Alex\Documents\Cookify\WebAppManagement\Core\obj\Debug\netcoreapp2.0\Core.dll
+C:\Users\Alex\Documents\Cookify\WebAppManagement\Core\obj\Debug\netcoreapp2.0\Core.pdb

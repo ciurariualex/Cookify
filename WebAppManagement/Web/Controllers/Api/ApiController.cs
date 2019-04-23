@@ -18,7 +18,7 @@ namespace Web.Controllers.Api
             _appUserModel = appUserRepository;
         }
 
-        [HttpGet("register")]
+        [HttpGet("register-app-user")]
         public async Task<IActionResult> Register([FromBody]AppUser model)
         {
             var appUsers = await _appUserModel.GetAllActive();
@@ -48,6 +48,7 @@ namespace Web.Controllers.Api
             return this.BadRequest("User exist");
         }
 
+        [HttpPost("login-app-user")]
         public async Task<IActionResult> Login(string AuthToken)
         {
             var appUsers = await _appUserModel.GetAllActive();

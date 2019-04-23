@@ -1,0 +1,8 @@
+﻿@model Web.ViewModels.Home.HomeViewModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="row" style="padding-top:100px">
+    @Html.Partial("Partial/Alert", Model.AppUsersCount)
+</div>

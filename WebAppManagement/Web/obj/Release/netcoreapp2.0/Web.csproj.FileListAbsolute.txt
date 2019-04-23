@@ -1,0 +1,51 @@
+C:\Users\Alex\Desktop\Proiect IP\Evidenta salilor v1.1\Evidenta salilor v1.1\Web\bin\Release\netcoreapp2.0\Web.deps.json
+C:\Users\Alex\Desktop\Proiect IP\Evidenta salilor v1.1\Evidenta salilor v1.1\Web\bin\Release\netcoreapp2.0\Web.runtimeconfig.json
+C:\Users\Alex\Desktop\Proiect IP\Evidenta salilor v1.1\Evidenta salilor v1.1\Web\bin\Release\netcoreapp2.0\Web.runtimeconfig.dev.json
+C:\Users\Alex\Desktop\Proiect IP\Evidenta salilor v1.1\Evidenta salilor v1.1\Web\bin\Release\netcoreapp2.0\Web.dll
+C:\Users\Alex\Desktop\Proiect IP\Evidenta salilor v1.1\Evidenta salilor v1.1\Web\bin\Release\netcoreapp2.0\Web.pdb
+C:\Users\Alex\Desktop\Proiect IP\Evidenta salilor v1.1\Evidenta salilor v1.1\Web\bin\Release\netcoreapp2.0\Core.dll
+C:\Users\Alex\Desktop\Proiect IP\Evidenta salilor v1.1\Evidenta salilor v1.1\Web\bin\Release\netcoreapp2.0\Resources.dll
+C:\Users\Alex\Desktop\Proiect IP\Evidenta salilor v1.1\Evidenta salilor v1.1\Web\bin\Release\netcoreapp2.0\Core.pdb
+C:\Users\Alex\Desktop\Proiect IP\Evidenta salilor v1.1\Evidenta salilor v1.1\Web\bin\Release\netcoreapp2.0\Resources.pdb
+C:\Users\Alex\Desktop\Proiect IP\Evidenta salilor v1.1\Evidenta salilor v1.1\Web\obj\Release\netcoreapp2.0\Web.csprojAssemblyReference.cache
+C:\Users\Alex\Desktop\Proiect IP\Evidenta salilor v1.1\Evidenta salilor v1.1\Web\obj\Release\netcoreapp2.0\Web.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\Proiect IP\Evidenta salilor v1.1\Evidenta salilor v1.1\Web\obj\Release\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Alex\Desktop\Proiect IP\Evidenta salilor v1.1\Evidenta salilor v1.1\Web\obj\Release\netcoreapp2.0\Web.AssemblyInfoInputs.cache
+C:\Users\Alex\Desktop\Proiect IP\Evidenta salilor v1.1\Evidenta salilor v1.1\Web\obj\Release\netcoreapp2.0\Web.AssemblyInfo.cs
+C:\Users\Alex\Desktop\Proiect IP\Evidenta salilor v1.1\Evidenta salilor v1.1\Web\obj\Release\netcoreapp2.0\Web.csproj.CopyComplete
+C:\Users\Alex\Desktop\Proiect IP\Evidenta salilor v1.1\Evidenta salilor v1.1\Web\obj\Release\netcoreapp2.0\Web.dll
+C:\Users\Alex\Desktop\Proiect IP\Evidenta salilor v1.1\Evidenta salilor v1.1\Web\obj\Release\netcoreapp2.0\Web.pdb
+C:\Users\Alex\Documents\winter\WebAppManagement\Web\bin\Release\netcoreapp2.0\Web.deps.json
+C:\Users\Alex\Documents\winter\WebAppManagement\Web\bin\Release\netcoreapp2.0\Web.runtimeconfig.json
+C:\Users\Alex\Documents\winter\WebAppManagement\Web\bin\Release\netcoreapp2.0\Web.runtimeconfig.dev.json
+C:\Users\Alex\Documents\winter\WebAppManagement\Web\bin\Release\netcoreapp2.0\Web.dll
+C:\Users\Alex\Documents\winter\WebAppManagement\Web\bin\Release\netcoreapp2.0\Web.pdb
+C:\Users\Alex\Documents\winter\WebAppManagement\Web\bin\Release\netcoreapp2.0\Core.dll
+C:\Users\Alex\Documents\winter\WebAppManagement\Web\bin\Release\netcoreapp2.0\Resources.dll
+C:\Users\Alex\Documents\winter\WebAppManagement\Web\bin\Release\netcoreapp2.0\Core.pdb
+C:\Users\Alex\Documents\winter\WebAppManagement\Web\bin\Release\netcoreapp2.0\Resources.pdb
+C:\Users\Alex\Documents\winter\WebAppManagement\Web\obj\Release\netcoreapp2.0\Web.csprojAssemblyReference.cache
+C:\Users\Alex\Documents\winter\WebAppManagement\Web\obj\Release\netcoreapp2.0\Web.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Documents\winter\WebAppManagement\Web\obj\Release\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Alex\Documents\winter\WebAppManagement\Web\obj\Release\netcoreapp2.0\Web.AssemblyInfoInputs.cache
+C:\Users\Alex\Documents\winter\WebAppManagement\Web\obj\Release\netcoreapp2.0\Web.AssemblyInfo.cs
+C:\Users\Alex\Documents\winter\WebAppManagement\Web\obj\Release\netcoreapp2.0\Web.csproj.CopyComplete
+C:\Users\Alex\Documents\winter\WebAppManagement\Web\obj\Release\netcoreapp2.0\Web.dll
+C:\Users\Alex\Documents\winter\WebAppManagement\Web\obj\Release\netcoreapp2.0\Web.pdb
+F:\Personal Pojects\MM_App\WebAppManagement\Web\obj\Release\netcoreapp2.0\Web.csprojAssemblyReference.cache
+F:\Personal Pojects\MM_App\WebAppManagement\Web\obj\Release\netcoreapp2.0\Web.csproj.CoreCompileInputs.cache
+F:\Personal Pojects\MM_App\WebAppManagement\Web\obj\Release\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+F:\Personal Pojects\MM_App\WebAppManagement\Web\obj\Release\netcoreapp2.0\Web.AssemblyInfoInputs.cache
+F:\Personal Pojects\MM_App\WebAppManagement\Web\obj\Release\netcoreapp2.0\Web.AssemblyInfo.cs
+F:\Personal Pojects\MM_App\WebAppManagement\Web\obj\Release\netcoreapp2.0\Web.dll
+F:\Personal Pojects\MM_App\WebAppManagement\Web\obj\Release\netcoreapp2.0\Web.pdb
+F:\Personal Pojects\MM_App\WebAppManagement\Web\bin\Release\netcoreapp2.0\Web.deps.json
+F:\Personal Pojects\MM_App\WebAppManagement\Web\bin\Release\netcoreapp2.0\Web.runtimeconfig.json
+F:\Personal Pojects\MM_App\WebAppManagement\Web\bin\Release\netcoreapp2.0\Web.runtimeconfig.dev.json
+F:\Personal Pojects\MM_App\WebAppManagement\Web\bin\Release\netcoreapp2.0\Web.dll
+F:\Personal Pojects\MM_App\WebAppManagement\Web\bin\Release\netcoreapp2.0\Web.pdb
+F:\Personal Pojects\MM_App\WebAppManagement\Web\bin\Release\netcoreapp2.0\Core.dll
+F:\Personal Pojects\MM_App\WebAppManagement\Web\bin\Release\netcoreapp2.0\Resources.dll
+F:\Personal Pojects\MM_App\WebAppManagement\Web\bin\Release\netcoreapp2.0\Core.pdb
+F:\Personal Pojects\MM_App\WebAppManagement\Web\bin\Release\netcoreapp2.0\Resources.pdb
+F:\Personal Pojects\MM_App\WebAppManagement\Web\obj\Release\netcoreapp2.0\Web.csproj.CopyComplete

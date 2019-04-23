@@ -1,0 +1,22 @@
+F:\Personal Pojects\MM_App\WebAppManagement\Web
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=Web
+--content-root=F:\Personal Pojects\MM_App\WebAppManagement\Web
+--file=F:\Personal Pojects\MM_App\WebAppManagement\Web\Views\Home\About.cshtml
+--file=F:\Personal Pojects\MM_App\WebAppManagement\Web\Views\Home\Contact.cshtml
+--file=F:\Personal Pojects\MM_App\WebAppManagement\Web\Views\Home\Index.cshtml
+--file=F:\Personal Pojects\MM_App\WebAppManagement\Web\Views\Home\Partial\Alert.cshtml
+--file=F:\Personal Pojects\MM_App\WebAppManagement\Web\Views\Home\Partial\Client.cshtml
+--file=F:\Personal Pojects\MM_App\WebAppManagement\Web\Views\Home\Partial\Guide.cshtml
+--file=F:\Personal Pojects\MM_App\WebAppManagement\Web\Views\Home\Partial\Message.cshtml
+--file=F:\Personal Pojects\MM_App\WebAppManagement\Web\Views\Home\Partial\Refuge.cshtml
+--file=F:\Personal Pojects\MM_App\WebAppManagement\Web\Views\Home\Partial\User.cshtml
+--file=F:\Personal Pojects\MM_App\WebAppManagement\Web\Views\Shared\Error.cshtml
+--file=F:\Personal Pojects\MM_App\WebAppManagement\Web\Views\Shared\_GridNoData.cshtml
+--file=F:\Personal Pojects\MM_App\WebAppManagement\Web\Views\Shared\_Layout.cshtml
+--file=F:\Personal Pojects\MM_App\WebAppManagement\Web\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=F:\Personal Pojects\MM_App\WebAppManagement\Web\Views\User\Index.cshtml
+--file=F:\Personal Pojects\MM_App\WebAppManagement\Web\Views\User\Login.cshtml
+--file=F:\Personal Pojects\MM_App\WebAppManagement\Web\Views\User\Register.cshtml
+--file=F:\Personal Pojects\MM_App\WebAppManagement\Web\Views\_ViewImports.cshtml
+--file=F:\Personal Pojects\MM_App\WebAppManagement\Web\Views\_ViewStart.cshtml

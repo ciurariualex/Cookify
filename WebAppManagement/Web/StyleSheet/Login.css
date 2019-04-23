@@ -1,0 +1,14 @@
+﻿
+h2 {
+    text-align: center;
+    font-family: 'HoloLens MDL2 Assets';
+}
+
+
+.loginpage {
+    justify-content: space-around;
+}
+
+p {
+    text-align: center;
+}

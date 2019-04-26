@@ -18,8 +18,7 @@ namespace Web.Controllers.Api
             _appUserModel = appUserRepository;
         }
 
-        [HttpGet("register-app-user")]
-        public async Task<IActionResult> Register([FromBody]AppUser model)
+        public async Task<IActionResult> RegisterGet(Web.ViewModels.AppUser.AppUser model)
         {
             var appUsers = await _appUserModel.GetAllActive();
 
@@ -48,8 +47,52 @@ namespace Web.Controllers.Api
             return this.BadRequest("User exist");
         }
 
-        [HttpPost("login-app-user")]
-        public async Task<IActionResult> Login(string AuthToken)
+        [HttpPost]
+        public async Task<IActionResult> RegisterPost([FromBody]Web.ViewModels.AppUser.AppUser model)
+        {
+            var appUsers = await _appUserModel.GetAllActive();
+
+            var user = appUsers.FirstOrDefault(appUser => appUser.Equals(model.AuthToken));
+
+            if (user == null)
+            {
+                var appUser = new AppUser()
+                {
+                    UserType = (UserType)Enum.Parse(typeof(UserType), model.UserTypeString),
+                    AuthToken = model.AuthToken,
+                    Email = model.Email,
+                    LastName = model.LastName,
+                    FirstName = model.FirstName,
+                    RestaurantName = model.RestaurantName,
+                    Latitude = model.Latitude,
+                    Longitude = model.Longitude,
+                    PhoneNumber = model.PhoneNumber
+                };
+
+                await _appUserModel.Create(appUser);
+
+                return this.Accepted(new { appUser.AuthToken, Message = "Successfully Created" });
+            }
+
+            return this.BadRequest("User exist");
+        }
+
+        public async Task<IActionResult> LoginGet(string AuthToken)
+        {
+            var appUsers = await _appUserModel.GetAllActive();
+
+            var currentUser = appUsers.FirstOrDefault(appUser => appUser.AuthToken.Equals(AuthToken));
+
+            if (currentUser != null)
+            {
+                return this.Accepted(currentUser);
+            }
+
+            return this.BadRequest();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> LoginPost(string AuthToken)
         {
             var appUsers = await _appUserModel.GetAllActive();
 

@@ -1,0 +1,29 @@
+@using Microsoft.AspNetCore.Identity
+@using Core.Models.Identity
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@inject IAuthorizationService AuthorizationService
+
+@if (SignInManager.IsSignedIn(User))
+{
+<ul class="nav navbar-nav navbar-right">
+    <li>
+        <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello, @UserManager.GetUserName(User)!</a>
+    </li>
+
+    @if ((await AuthorizationService.AuthorizeAsync(this.User, null, Web.AuthorisationPolicies.UserRegister)).Succeeded)
+    {
+
+        <li><a asp-area="Authentication" asp-controller="Authentication" asp-action="Register">Register another User</a></li>
+    }
+
+    <li><a asp-area="Authentication" asp-controller="Authentication" asp-action="Logout">Logout</a></li>
+</ul>
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li><a asp-area="Authentication" asp-controller="Authentication" asp-action="Login">Login</a></li>
+    </ul>
+}

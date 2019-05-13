@@ -1,11 +1,15 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@using Core.Models.Identity
+
+@inject SignInManager<ApplicationUser> SignInManager
+
+<!DOCTYPE html>
 <html>
 <head>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Web</title>
 
-    <title> Plus Alert</title>
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
@@ -18,8 +22,7 @@
     </environment>
 </head>
 <body>
-    
-    <nav class="navbar navbar-inverse navbar-fixed-top" style="display:flex">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -28,39 +31,33 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Home</a>
+                }
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><img src="http://i65.tinypic.com/hrlvrp.jpg" height="55" width="55" /></li>
-
-                    @if (this.User.Identity.IsAuthenticated)
+                    @if (SignInManager.IsSignedIn(User))
                     {
-                        <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                        <li><a asp-area="" asp-controller="Client" asp-action="Index">Client Page</a></li>
+                        <li><a asp-area="Dashboard" asp-controller="Dashboard" asp-action="Index">Dashboard</a></li>
                     }
-                    else
-                    {
-                        <li><a asp-area="" asp-controller="Client" asp-action="Index">Home</a></li>
-                    }
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                 </ul>
-                <ul class="nav navbar-nav pull-right">
-                    @if (!this.User.Identity.IsAuthenticated)
-                    {
-                        <li><a asp-area="" asp-controller="User" asp-action="Login">Login</a></li>
-                    }
-                    else
-                    {
-                        <li><a asp-area="" asp-controller="User" asp-action="Register">Register another User</a></li>
-                        <li><a asp-area="" asp-controller="User" asp-action="Logout">Logout</a></li>
-                    }
-                </ul>
-
+                <partial name="_LoginPartial" />
             </div>
         </div>
     </nav>
+
+    <partial name="_CookieConsentPartial" />
+
     <div class="container body-content">
         @RenderBody()
         <hr />
+        <footer>
+            <p>&copy; 2019 - Scheduler</p>
+        </footer>
     </div>
 
     <environment include="Development">
@@ -69,11 +66,11 @@
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
                 asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
                 asp-fallback-test="window.jQuery"
                 crossorigin="anonymous"
-                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
         </script>
         <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
                 asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"

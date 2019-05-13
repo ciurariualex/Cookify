@@ -1,0 +1,11 @@
+﻿@model Web.Areas.Dashboard.Models.DashboardViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Dashboard</h2>
+
+<div class="row" style="padding-top:100px">
+    @await Html.PartialAsync("~/Areas/Dashboard/Views/Partial/MobileApplicationUsers.cshtml", Model.MobileApplicationUsersCount)
+</div>
+

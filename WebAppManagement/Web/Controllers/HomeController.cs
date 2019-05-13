@@ -1,37 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using Core.Business.Models.Interfaces;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Web.ViewModels.Home;
+using Web.Models;
 
 namespace Web.Controllers
 {
-    [Authorize]
-    public class HomeController : BaseController
+    public class HomeController : Controller
     {
-        protected readonly IUserRepository _userModel;
-        protected readonly IAppUserRepository _appUserModel;
-
-        public HomeController(
-            IUserRepository userRepository,
-            IAppUserRepository appUserRepository)
-        {
-            _userModel = userRepository;
-            _appUserModel = appUserRepository;
-        }
         public IActionResult Index()
         {
-            HttpContext.Session.SetString("Notification", "");
+            return View();
+        }
 
-            var appUsers = _appUserModel.GetAllActive().Result;
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Your application description page.";
 
-            var model = new HomeViewModel(appUsers.Count());
+            return View();
+        }
 
-            return View(model);
+        public IActionResult Contact()
+        {
+            ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

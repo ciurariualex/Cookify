@@ -50,6 +50,7 @@ namespace Web
 
             services.AddScoped<IMobileApplicationUserService, MobileApplicationUserService>();
             services.AddScoped<IApplicationUserService, ApplicationUserService>();
+            services.AddScoped<ICardService, CardService>();
 
             services.Configure<CookiePolicyOptions>(options =>
             {

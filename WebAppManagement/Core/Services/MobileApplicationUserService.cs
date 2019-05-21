@@ -27,6 +27,15 @@ namespace Core.Services
         {
             return await pagedQuery.CountAsync();
         }
+
+        public async Task<List<MobileApplicationUser>> GetEagerAllAsync()
+        {
+            return await context
+               .MobileApplicationUsers
+               .AsNoTracking()
+               .Include(mobileApplicationUser => mobileApplicationUser.Cards)
+               .ToListAsync();
+        }
     }
 }
 

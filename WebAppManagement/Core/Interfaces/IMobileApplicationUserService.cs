@@ -10,5 +10,6 @@
     {
         Task<List<MobileApplicationUser>> GetPagedAsync(IQueryable<MobileApplicationUser> query, int page, int size);
         Task<int> GetPagedCountAsync(IQueryable<MobileApplicationUser> pagedQuery);
+        Task<List<MobileApplicationUser>> GetEagerAllAsync();
     }
 }

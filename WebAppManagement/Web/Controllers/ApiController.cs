@@ -69,12 +69,16 @@ namespace Web.Controllers
         [HttpPost]
         public async Task<IActionResult> DeleteUser(string authToken)
         {
-            var appUsers = await mobileApplicationUserService.GetAllAsync();
+            var appUsers = await mobileApplicationUserService.GetEagerAllAsync();
 
             var currentUser = appUsers.FirstOrDefault(appUser => appUser.AuthToken.Equals(authToken));
 
             if (currentUser != null)
             {
+                foreach (var card in currentUser.Cards)
+                {
+                    await cardService.DeleteAsync(card);
+                }
                 await mobileApplicationUserService.DeleteAsync(currentUser);
                 return this.Accepted("User succesfully deleted");
             }
@@ -85,7 +89,7 @@ namespace Web.Controllers
         [HttpPost]
         public async Task<IActionResult> DeleteCard(string cardId)
         {
-            if(!Guid.TryParse(cardId, out var id))
+            if (!Guid.TryParse(cardId, out var id))
             {
                 return this.BadRequest("Invalid Id");
             }
@@ -99,6 +103,30 @@ namespace Web.Controllers
 
             return this.BadRequest("Card not found");
         }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateCard([FromBody]Web.Models.Card model)
+        {
+            var cards = await cardService.GetAllAsync();
+
+            var card = cards.FirstOrDefault(c => c.Id.Equals(model.cardId));
+
+            if (card != null)
+            { 
+                card.Image = model.Image;
+                card.Name = model.Name;
+                card.Description = model.Description;
+                card.Price = model.Price;
+                card.Category = model.Category;
+
+                await cardService.UpdateAsync(card);
+
+                return this.Accepted(new { card.Id, Message = "Successfully Updated" });
+            }
+
+            return this.BadRequest("Card not found");
+        }
+
 
         [HttpPost]
         public async Task<IActionResult> AddCard([FromBody]Web.Models.Card model)
@@ -127,7 +155,7 @@ namespace Web.Controllers
 
                 await cardService.CreateAsync(card);
 
-                return this.Accepted(new { Message = "Card Successfully Added" });
+                return this.Accepted(new { card.Id, Message = "Card Successfully Added" });
             }
 
             return this.BadRequest("User not found");
@@ -146,6 +174,40 @@ namespace Web.Controllers
             }
 
             return this.BadRequest("User not found");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetRestaurantCards(string authToken)
+        {
+            var appUsers = await mobileApplicationUserService.GetEagerAllAsync();
+
+            var user = appUsers.FirstOrDefault(appUser => appUser.AuthToken.Equals(authToken));
+
+            if (user != null && user.UserType == UserType.Restaurant)
+            {
+                return this.Accepted(user.Cards);
+            }
+
+            return this.BadRequest("Restaurant not found");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetCards()
+        {
+            var cards = await cardService.GetAllAsync();
+
+            if (cards.Any())
+            {
+                return this.Accepted(cards);
+            }
+
+            return this.BadRequest("Cards not found");
+        }
+
+        [HttpGet]
+        public IActionResult CheckConnection()
+        {
+            return this.Accepted("Success");
         }
     }
 }
